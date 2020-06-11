@@ -1,0 +1,217 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+/* Deafult styling */
+
+:root {
+    --ff-primary: "Merriweather Sans", Helvetica;
+    --ff-secondary: "Libre Baskerville", sans-serif;
+
+    --fw-reg: 400px;
+    --fw-bold: 700px;
+
+    --clr-bg: #333399;
+    --clr-pry: #f64c72;
+    --clr-sec: #f7f7f7;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-h4: 1.1rem;
+    --fs-body: 1rem;
+}
+
+@media (min-width: 800px){
+    :root{
+        --fs-h1: 4.3rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-h4: 1.35rem;
+        --fs-body: 1.125rem;
+    }
+ }
+body{
+  
+    width: 100%;
+}
+/* Hero design */
+/* 
+#hero{
+    background-image: url(./img/slider1.jpg) no-repeat;
+    background-size: cover;
+    height: 500px;
+
+} */
+
+h1, h2, h3{
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+}
+
+nav#myNav {
+    color: var(--clr-sec) !important;
+    background-color: var(--clr-bg) !important;
+}
+
+a.nav-link{
+    font-family: var(--ff-primary);
+    color: var(--clr-sec) !important;
+    /* width: 90px; */
+    padding: 10px;
+    margin-left: 10px;
+}
+a.nav-link:hover{
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    border-bottom: 2px solid var(--clr-pry);
+    /* color: var(--clr-bg); */
+}
+
+
+div.container.intro-text{
+    margin: 0 auto !important;
+    color: var(--clr-sec);
+}
+
+h1 .intro{
+    font-family: var(--ff-primary);
+}
+
+span.intro-break{
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    color: var(--clr-bg);
+}
+
+p.lead{
+    font-size: var(--fs-h3);
+    font-weight: var(--fw-bold);
+    font-family: var(--ff-secondary);
+}
+
+button.intro-button{
+    background-color: var(--clr-bg);
+    border: 1px solid var(--clr-sec);
+}
+
+button.intro-button:hover{
+    background-color: var(--clr-sec);
+    color: var(--clr-bg);
+    border: 1px solid var(--clr-bg);
+}
+
+/* About us styling */
+
+div.row.about-us{
+   margin: 0 auto;
+}
+
+.img-size{
+    height: 400px;;
+    width: auto;
+}
+
+@media only screen and (max-width: 540px){
+    
+.img-size{
+    align-items: center;
+    width: 350px;
+    height: auto;
+   padding-left: 30px;
+}
+}
+
+div.col.about-us-info{
+    font-family: var(--ff-secondary);
+ margin: 0 auto;
+ text-align: center;
+ padding-top: 30px;
+}
+
+div.about-us h3{
+    color: var(--clr-bg);
+    font-size: var(--fs-h3);
+    font-family: var(--ff-primary);
+}
+
+div.about-us p {
+    font-size: var(--fs-body);
+    font-family: var(--ff-secondary);
+}
+
+/* Services coding */
+
+.services{
+    margin: 0 auto;
+}
+
+.my-services{
+    background-image: url(/img/img_5.jpg);
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+     background-color: var(--clr-bg);
+    width: 100%; */
+}
+
+
+.services img{
+    padding-left: 170px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 540px){
+    .services img{
+    padding-left: 80px;
+}
+}
+
+.sub-title{
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-reg);
+   text-align: center;
+    margin-bottom: 20px;
+    color: var(--clr-pry);
+    font-size: var(--fs-h4);
+    text-transform: capitalize;
+}
+
+.paragraph{
+    font-family: var(--ff-secondary);
+    font-size: var(--fs-body);
+    text-align: center;
+    color: var(--clr-sec);
+    letter-spacing: 1px;
+}
+
+/* Testinmonia */
+
+.testimonia{
+    background-color: var(--clr-bg);
+    color: var(--clr-sec);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+    box-shadow: 0 8px 6px -6px #333390;
+    /* height: 200px; */
+    width: auto;
+    margin: 20px;
+    text-align: center;
+   align-self: auto;
+
+}
+
+/* Register card */
+
+.registraion{
+    background-color: var(--clr-pry);
+    padding: 35px;
+    background-image: url(/img/img_1.jpg);
+    background-repeat: cover;
+    align-content: space-around;
+}
+
