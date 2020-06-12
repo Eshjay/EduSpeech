@@ -23,29 +23,32 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mt-3 mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" id="home" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Our Services</a>
+              <a class="nav-link" href="#about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Get Started</a>
+              <a class="nav-link" href="#services">Our Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.surveymonkey.com/r/K67PZ5G">Get Started</a>
             </li>
           </ul>
-            <button class="btn btn-outline-info my-2 my-sm-0 intro-button" type="button">Contact Us</button>
+            <a href="https://wa.me/2347066442907"><button class="btn btn-outline-info my-2 my-sm-0 intro-button" type="button"></a>Contact Us</button>
         </div>
       </nav>
       <div style="background:url(./img/slider1.jpg) no-repeat; background-size: cover; height: 600px;" class="jumbotron jumbotron-fluid" id="hero">
         <div class="container intro-text mt-5">
-          <h1 class="display-4 intro">Welcome to <br><span class='intro-break'>Edulink Speachworld</span></h1>
-          <p class="lead">We specialises in diction/elocution training, <br>
+          <h1 class="display-4 intro">Welcome to <br><span class='intro-break font-weight-bold'>Edulink Speachworld</span></h1>
+          <p class="lead">We specialise in diction/elocution training, <br>
             public speaking and communication skills, <br>
             accent reduction and correct expressions/pronunciations.</p>
           <button class="btn btn-info btn-lg intro-button">Get started</button>
         </div>
       </div>
 
-      <div class="container">
+      <div id="about" class="container">
       <div class="row about-us m-md-5 mt-5">
           <div class="col mt-5">
            <iframe width="560" height="315" src="https://www.youtube.com/embed/NwNdJyZ1MFg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -94,7 +97,7 @@
         </section> -->
 
       
-      <div style=" background-color:rgba(0, 0, 5, 0.623); background-blend-mode: multiply; background-image: url(./img/slider1.jpg); background-size: cover;" class="jumbotron jumbotron-fluid">
+      <div id="services" style=" background-color:rgba(0, 0, 5, 0.623); background-blend-mode: multiply; background-image: url(./img/slider1.jpg); background-size: cover;" class="jumbotron jumbotron-fluid">
         <div class="col-12 text-center pt-5">
           <h3 class='d-block text-light'>Our Services</h3>
         </div>
@@ -163,34 +166,21 @@
             <div class="col col col-8 col-sm-8 col=md-4 col-lg-4 text-center testimonia">
                 <p>I enrolled to this school a month to my GCE examinations. I must commend the facilitators of EDULINK SPEECHWORLD, they are top notch facilitators.
                      I passed my English Language with a distinction after failing for 3 years before I enrolled into this school. Thanks.</p>
-                <p class="text-right font-italic font-weight-bold">Ayorinde Emmanuel</p>
+                <p class="text-right font-italic font-weight-bold">Ayorinde Emmanuel<span class="font-weight-light"> Student</span> </p>
             </div>
 
             <div class="col col col-8 col-sm-8 col=md-4 col-lg-4 text-center testimonia">
-                <p>I enrolled to this school a month to my GCE examinations. I must commend the facilitators of EDULINK SPEECHWORLD, they are top notch facilitators.
-                     I passed my English Language with a distinction after failing for 3 years before I enrolled into this school. Thanks.</p>
-                <p class="text-right font-italic font-weight-bold">Ayorinde Emmanuel</p>
+                <p>Since my school registered under EDULINK SPEECHWORLD for diction training, my students have been doing well 
+                  in their communication skills which had helped in adding to our numbers every term. Thanks to EDULINK, my school now has a distinct brand.</p>
+                <p class="text-right font-italic font-weight-bold">Mrs Adetayo Babatunde <span class="font-weight-light"> Proprietress</span> </p>
             </div>
             </div>
 
-            <!-- <div class="row justify-content-center">
-              <div class="col-md-12 d-flex">
-                <h3 class="m-0">Register with us now</h3>
-              </div>
-              <a href="#"  class="btn btn-lg py-3 ml-auto">Get Started</a>
-            </div> -->
-            <!-- <div style="background-image: url(./img/slider4.jpgs); background-size: cover;" class="card border-0 register-card">
-              <div class="card-body register-card">
-                <h5 class="card-title">You can also speak better</h5>
-                <p class="card-text">With our masterclass, we are commited to improve your accent </p>
-                <a href="#" class="btn btn-primary float-right">Get Started</a>
-              </div>
-            </div> -->
 
-            <div class="registraion jumbotron jumbotron-fluid">
+            <div class="registraion">
               <div>
-                <h3>With our masterclass, we are commited to improve your accent</h3>
-                <button class="btn btn-info btn-lg intro-button mb-5 float-right" type="button">Get Started</button>
+                <h3>With our masterclass,<br> we are commited to improve your accent</h3>
+                <button class="btn btn-info intro-button btn-lg" type="button">Get Started Today!</button>
               </div>
               </div>
               <!-- <div class="registration">
@@ -198,31 +188,37 @@
               </div> -->
 
             </div>
-            <footer>
-                <div>
+            <footer class="bg-dark">
+                <div class="my-footer">
                   <div class="address">
-                    <p>2, Olu Olayinka Street, Adeoyo, Ibadan, Oyo state,Nigeria.</p>
-                    <p>Phone No: <a href="tel:07066442907"></a>+2347066442907</a></p>
-                    <p>Email:<a href="mailto:edulinkspeechworld@gmail.com">edulinkspeechworld@gmail.com</a></p>
-                    <p>Opening hours: Monday – Saturday 9am-6pm </p>
+                    <p><span class='font-weight-bold'>Address:</span> <br>2, Olu Olayinka Street,<br> Adeoyo, Ibadan, <br>Oyo state,Nigeria.</p>
+                    <p><span class="font-weight-bold">Phone No: <br></span><a href="tel:07066442907">+2347066442907</a><br><a href="tel:08106527854">+2348106527854</a></p>
+                  </div>
+                  <div class="address">
+                    <p><span class="font-weight-bold">Email: <br></span> <a href="mailto:edulinkspeechworld@gmail.com"> edulinkspeechworld@gmail.com</a></p>
+                    <p><span class="font-weight-bold">Opening hours: <br></span> Monday – Saturday 9am-6pm </p>
                   </div>
                   <div class="social-media">
-                    <li class="social-item"><a class="social-link icon" href="#"><i class="fab fa-facebook"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="fab fa-instagram"></i></a></a></li>
-                    <li class="social-item"><a class="social-link" href="#"><i class="fab fa-whatsapp"></i></a></a></li>
+                    <ul>
+                    <li class="social-item"><a class="social-link" href="https://www.facebook.com/edulink.speechworld"><i class="fab fa-facebook"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.twitter.com/fadekeedulinks1"><i class="fab fa-twitter"></i></a></a></li>
+                    <li class="social-item"><a class="social-link" href="https://wa.me/2347066442907"><i class="fab fa-whatsapp"></i></a></a></li>
+                    </ul>
+                  </div>
+
+                  <div class="footer-nav">
+                    <ul>
+                      <li><a href='#home'>Home</a></li>
+                      <li><a href='#about'>About Us</a></li>
+                      <li><a href='#services'>Services</a></li>
+                      <li><a href='https://wa.me/2347066442907'> Contact us</a></li>
+                    </ul>
                   </div>
                 </div>
-                <div>
-                  <ul>
-                    <li>Home</li>
-                    <li>About Us</li>
-                    <li><a href='#'> Contact us</a></li>
-                  </ul>
-                </div>
                 <hr>
-                <div class="copyright">
-                  <p>
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank" >Edulink Speechworld</a>
+                <div class="copyright text-center">
+                  <p class="text-italic text-white font-weight-bolder">
+                    Copyright &copy; <script>document.write(new Date().getFullYear());</script> All rights reserved | <a href="#" target="_blank" >Edulink Speechworld</a>
                   </p>
                 </div>
             </footer>
