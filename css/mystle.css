@@ -13,7 +13,7 @@
     --fw-reg: 400px;
     --fw-bold: 700px;
 
-    --clr-bg: #333399;
+    --clr-bg: #17a2b8;
     --clr-pry: #f64c72;
     --clr-sec: #f7f7f7;
 
@@ -33,14 +33,9 @@
         --fs-body: 1.125rem;
     }
  }
-/* body{
-  
-    width: 100%;
-} */
-
+ 
 html{
     scroll-behavior: smooth;
-    width: 90;
 }
 
 /* Hero design */
@@ -75,6 +70,15 @@ a.nav-link:hover{
     /* color: var(--clr-bg); */
 }
 
+a{
+    text-decoration: none;
+    font-weight: var(--fw-bold);
+    color: var(--clr-sec);
+}
+a:hover {
+    text-decoration: none;
+    color: var(--clr-bg);
+}
 
 div.container.intro-text{
     margin: 0 auto !important;
@@ -129,6 +133,9 @@ div.row.about-us{
 }
 }
 
+button.btn.order-now.btn-info.m-auto.intro-button{
+    margin-left: 100px;
+}
 div.col.about-us-info{
     font-family: var(--ff-secondary);
  margin: 0 auto;
@@ -202,7 +209,7 @@ div.about-us p {
     border-top-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding-top: 15px;
-    box-shadow: 0 8px 6px -6px #333390;
+    box-shadow: 0 8px 6px -6px var(--clr-bg);
     /* height: 200px; */
     width: auto;
     margin: 20px;
@@ -266,4 +273,17 @@ footer a:hover{
 
 .copyright{
     font-family: var(--ff-secondary);
+}
+
+.review-img{
+    height: auto;
+    
+    width: 200px;
+    border-radius: 10%;
+}
+
+.postion-box{
+    position: absolute;
+    top: 30px;
+    left: 30px;
 }
