@@ -13,7 +13,7 @@
     --fw-reg: 400px;
     --fw-bold: 700px;
 
-    --clr-bg: #17a2b8;
+    --clr-bg: #17a2a8;
     --clr-pry: #f64c72;
     --clr-sec: #f7f7f7;
 
@@ -51,7 +51,11 @@ h1, h2, h3{
     font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
 }
-
+hr{
+    border-color: var(--clr-bg);
+    
+   
+}
 nav#myNav {
     color: var(--clr-sec) !important;
     background-color: var(--clr-bg) !important;
@@ -65,8 +69,15 @@ a.nav-link{
     margin-left: 10px;
 }
 a.nav-link:hover{
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
-    border-bottom: 2px solid var(--clr-pry);
+    transition: color 0.15s ease-in-out, 
+    background-color 0.15s ease-in-out, 
+    border-color 0.15s ease-in-out, 
+    box-shadow 0.15s ease-in-out, 
+    -webkit-box-shadow 0.15s ease-in-out;
+    /* color: var(--clr-bg);
+    background-color: var(--clr-sec); */
+    border-radius: 2px;
+    border: 2px solid;
     /* color: var(--clr-bg); */
 }
 
@@ -77,7 +88,7 @@ a{
 }
 a:hover {
     text-decoration: none;
-    color: var(--clr-bg);
+    color: var(--clr-sec);
 }
 
 div.container.intro-text{
